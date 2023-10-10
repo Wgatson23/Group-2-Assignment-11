@@ -496,7 +496,7 @@ body {
 	.column_half.right_half {
 		width: 100%;
 	}
-}
+
 
 @media (min-width: 769px) and (max-width: 1000px) {
 	.secondary_header {
@@ -583,7 +583,7 @@ body {
 	opacity: 0.5;
 }
 
-#menu {
+.menu {
 }
 
 footer {
