@@ -249,9 +249,11 @@ footer {
 	padding: 5px 0;
 	font: Arial, Helvetica, sans-serif;
 	text-decoration: none;
-	-webkit-text-stroke: 2px var(--fill-color: #3fb549);
-	background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
-	color: #3bc4e3;
+	-webkit-text-stroke: 2px var(--fill-color, #3fb549);
+	div {
+		background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+		color: #3bc4e3;
+	}
 	background-clip: text;
 	transition: 0.8s linear;
 
