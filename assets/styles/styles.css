@@ -259,9 +259,7 @@ p:nth-child(2):first-letter {
 	line-height: 1;
 }
 
-.footer {
-	background-color: #717070;
-}
+
 
 .title {
 	font-weight: bold;
@@ -583,17 +581,17 @@ body {
 	opacity: 0.5;
 }
 
-.menu {
-}
+
 
 footer {
+	display: flex;
+	flex-direction: column;
 	font-size: 20px;
 	text-align: center;
 	color: white;
 	width: 100%;
 	bottom: 0;
-	background-color: #fa4616;
-	clear: both;
+	background-color: #717070;
 }
 
 
@@ -621,6 +619,11 @@ Will ----------------
 	display: inline-block;
 }
 
+.castmembers {
+	padding: 20px;
+ } 
+
+ 
 div.images{
 	display: flex;
 	flex-flow: row wrap;
