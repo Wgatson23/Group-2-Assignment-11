@@ -596,9 +596,51 @@ footer {
 	clear: both;
 }
 
+
+
+
+
+
 Will ----------------
 
+.castrow::after {
+	content: 25%;
+	clear: both;
+	display: table;
+}
 
+.rowtwo .columns {
+	display: flex;
+	width: 100%;
+	margin-right: 0px;
+	margin-bottom: 12px;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	display: inline-block;
+}
+
+div.images{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+div.images div.castrow {
+	display: flex;
+	flex-flow: row;
+}
+
+div.images img{
+	width: 200px;
+	height: 200px;
+}
+
+.columns {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+  }
 
 Jawanza -------------
 

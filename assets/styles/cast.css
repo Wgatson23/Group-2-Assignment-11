@@ -5,14 +5,140 @@
 }
 
 header {
-	border-bottom: 60px solid #594a42;
-	padding: 3em;
-	margin-bottom: 20px;
+	background-color: brown;
+	color: #fff;
+	padding: 1em;
 }
+
+.topheader {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #343434;
+	clear: left;
+}
+
+.container .topheader ul {
+	margin-top: 0%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+	width: 100%;
+}
+
+.topheader ul li {
+	list-style: none;
+	float: left;
+	margin-right: auto;
+	margin-top: 0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: white;
+	letter-spacing: 1px;
+	margin-left: auto;
+	text-align: center;
+	width: 16%;
+	transition: all 0.3s linear;
+}
+
+.menuwords {
+	display: flex;
+	flex-direction: row;
+	align-self: flex-end;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.topheader ul li {
+	list-style: none;
+	float: left;
+	margin-right: auto;
+	margin-top: 0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: white;
+	letter-spacing: 1px;
+	margin-left: auto;
+	text-align: center;
+	width: 16%;
+	transition: all 0.3s linear;
+}
+
+.topheader ul li:hover {
+	color: #717070;
+	cursor: pointer;
+}
+
+.menuwords li:hover {
+	animation: shake 4s linear infinite;
+}
+.topheader ul li:visited {
+	background-color: hotpink;
+}
+
+@keyframes shake {
+	0%,
+	7% {
+		transform: rotateZ(0);
+	}
+	15% {
+		transform: rotateZ(-15deg);
+	}
+	20% {
+		transform: rotateZ(10deg);
+	}
+	25% {
+		transform: rotateZ(-10deg);
+	}
+	30% {
+		transform: rotateZ(6deg);
+	}
+	35% {
+		transform: rotateZ(-4deg);
+	}
+	50%,
+	100% {
+		transform: rotateZ(0);
+	}
+}
+
+.row {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	display: inline-block;
+}
+
+.row.blockDisplay {
+	display: block;
+}
+
+.container {
+	background-color: blanchedalmond;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-width: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+
 
 body {
 	background-color: blanchedalmond;
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	border-bottom-width: 0px;
@@ -58,12 +184,7 @@ a.link {
 	transition: all 0.3s ease-in-out;
 }
 
-header,
-nav {
-	padding: 0 20px;
-	background-color: #594a42;
-	color: #3bc4e3;
-}
+
 
 .park {
 	color: #3bc4e3;
@@ -249,11 +370,9 @@ footer {
 	padding: 5px 0;
 	font: Arial, Helvetica, sans-serif;
 	text-decoration: none;
-	-webkit-text-stroke: 2px var(--fill-color, #3fb549);
-	div {
-		background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
-		color: #3bc4e3;
-	}
+	-webkit-text-stroke: 2px var(--fill-color: #3fb549);
+	background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+	color: #3bc4e3;
 	background-clip: text;
 	transition: 0.8s linear;
 
