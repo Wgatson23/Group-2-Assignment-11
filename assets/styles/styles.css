@@ -4,11 +4,14 @@
 	border: 0;
 }
 
+<<<<<<< HEAD
 :root {
 	--primary-color: 
 
 }
 
+=======
+>>>>>>> 1e6f40de02dc083a05feac455ffa49acdf4a242e
 header {
 	background-color: var(--primary-color) brown	;
 	backdrop-filter: blur(10px);
@@ -684,6 +687,11 @@ body {
 
 		/*Jawanza -------------*/
 
-		/*Tatiana ----------- */
+/*Tatiana ----------- */
 
+
+<<<<<<< HEAD
 		/*Allie -------------*/
+=======
+/*Allie -------------*/
+>>>>>>> 1e6f40de02dc083a05feac455ffa49acdf4a242e
