@@ -4,11 +4,20 @@
 	border: 0;
 }
 
+:root {
+	--primary-color: 
+
+}
 
 header {
-	background-color: brown;
+	background-color: var(--primary-color) brown	;
+	backdrop-filter: blur(10px);
 	color: #fff;
-	padding: 1em;
+	padding: 10px;	
+	z-index: 50;
+	position:relative;
+	
+	
 }
 
 .menuwords {
@@ -141,7 +150,8 @@ span.tooltip span::after {
 
 .primary_header {
 	width: 100%;
-	background-color: #343434;
+	
+	backdrop-filter: blur(10px);
 	padding-top: 10px;
 	padding-bottom: 10px;
 	clear: left;
@@ -149,6 +159,8 @@ span.tooltip span::after {
 }
 
 .topheader {
+	background-color: #343434;
+	background: transparent;
 	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -382,7 +394,7 @@ body {
 	margin-left: 0px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 700px) {
 	.secondary_header ul li {
 		float: none;
 		margin-top: 28px;
@@ -460,7 +472,17 @@ body {
 
 
 
-	@media (min-width: 321px) and (max-width: 768px) {
+	@media (min-width: 400px) and (max-width: 768px) {
+
+		header {
+			font-size: 10px;
+			width: 100%;
+			height: auto;
+			padding-bottom: 25px;
+			word-spacing: 10px;
+			word-wrap:break-word;
+		}
+
 		.secondary_header ul li {
 			float: none;
 			margin-top: 28px;
@@ -520,9 +542,9 @@ body {
 
 		.columns {
 			width: 100%;
-			margin-top: 6px;
+			margin-top: 3px;
 			margin-right: 0px;
-			margin-bottom: 6px;
+			margin-bottom: 3px;
 			margin-left: 0px;
 			padding-top: 0px;
 			padding-right: 0px;
@@ -531,7 +553,7 @@ body {
 		}
 
 		.columns p {
-			padding-left: 14px;
+			padding-left: 20px;
 			padding-right: 14px;
 		}
 
@@ -544,7 +566,7 @@ body {
 		}
 
 
-		@media (min-width: 769px) and (max-width: 1000px) {
+		@media (min-width: 200px) and (max-width: 500px) {
 			.secondary_header {
 				overflow: auto;
 				padding-top: 30px;
@@ -576,7 +598,7 @@ body {
 			}
 
 			.columns {
-				width: 50%;
+				width: 100%;
 				float: left;
 				padding-left: 0px;
 				padding-top: 0px;
@@ -590,7 +612,7 @@ body {
 			}
 		}
 
-		@media (min-width: 1001px) {}
+		@media (min-width: 200px) {}
 
 		.thumbnail {
 			width: 100px;
