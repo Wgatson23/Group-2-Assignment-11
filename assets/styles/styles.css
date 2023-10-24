@@ -26,6 +26,10 @@ header {
 	font-weight: bold;
 }
 
+.menu__list:visited {
+	background-color: yellow;
+}
+
 .title {
 	padding-top: 40px;
 }
