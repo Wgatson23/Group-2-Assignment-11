@@ -5,13 +5,12 @@
 }
 
 :root {
-	--primary:var(--primary)
 	--primary-color: #A52A2A;
-	--text-color:
+	--secondary-color: blanchedalmond;
 }
 
 header {
-	background-color: var(--primary-color) brown;
+	background-color: var(--primary-color);
 	backdrop-filter: blur(10px);
 	color: #fff;
 	padding: 10px;
@@ -32,7 +31,7 @@ header {
 }
 
 .container {
-	background-color: blanchedalmond;
+	background-color: var(--secondary-color);
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
@@ -162,8 +161,8 @@ span.tooltip span::after {
 	background-color: #343434;
 	background: transparent;
 	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: #343434;
 	clear: left;
 }
@@ -382,9 +381,20 @@ p:nth-child(2):first-letter {
 .column_title {
 	padding-top: 25px;
 	padding-bottom: 25px;
+	
 }
 
+.column_title:hover {
+	animation: pulsate 1s ease-in-out;
+}
 
+@keyframes pulsate {
+	0% {
+		box-shadow:
+		0 0 55px #5ddcff,
+		0 0 55px #2b7138;
+	}
+}
 
 body {
 	background-color: whitesmoke;
@@ -662,7 +672,8 @@ body {
 			width: 100%;
 			bottom: 0;
 			background-color: #717070;
-		}
+
+			
 
 
 		/*Will*/
