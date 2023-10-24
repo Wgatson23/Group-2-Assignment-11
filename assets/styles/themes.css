@@ -1,8 +1,7 @@
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
+body {
+    background-color: whitesmoke;
 }
+
 header {
 	background-color: var(--primary-color) brown	;
 	backdrop-filter: blur(10px);
@@ -126,7 +125,7 @@ h2 {
 }
 
 p {
-    color: #3fb549;
+    color: #2b7138;
 }
 
 .container {
@@ -164,3 +163,18 @@ footer {
     bottom: 0;
     background-color: #717070;
 }
+
+@media (min-width: 400px) and (max-width: 768px) {
+    header {
+        font-size: 10px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 25px;
+        word-spacing: 10px;
+        word-wrap:break-word;
+    }
+
+}
+    @media (min-width: 200px) and (max-width: 500px) {
+
+    }
