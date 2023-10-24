@@ -699,8 +699,45 @@ body {
 
 		/*Jawanza -------------*/
 
+<<<<<<< HEAD
 		/*Tatiana ----------- */
+=======
+/*Tatiana ----------- */
+.tflex-container {
+	display: flex;
+    flex-direction: column;
+    max-width: 680px;
+    margin: 10px auto;
+    padding: 40px 40px 40px 0px;
+}
 
+
+#award > img {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+#award > p {
+    text-align: left;
+}
+>>>>>>> 42e1c88f8c8aa4bbcb633e28fe8693393fd64f52
+
+#award > h2 {
+    padding-top: 10x;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+.awardhero {
+    margin: auto;
+    max-width: 710px;
+}
+
+.awardhero > p, h1 {
+    text-align: left;
+}
 
 		<<<<<<< HEAD
 		/*Allie -------------*/
