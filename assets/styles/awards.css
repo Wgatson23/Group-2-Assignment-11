@@ -1,34 +1,63 @@
+:root {
+	--black: #232323;
+	--text-color-white: #FFFFFF;
+	--heading-color: #3fb549;
+	--footer-bg-color: #2b7138;
+}
+
+html {
+	background-color: var(--black);
+	color: var(--text-color-white);
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+	line-height: 1.5em;
+	scroll-behavior: smooth;
+}
+
 .tflex-container {
 	display: flex;
     flex-direction: column;
-    max-width: 680px;
+    max-width: 800px;
     margin: 10px auto;
-    padding: 40px 40px 40px 0px;
+    background-color: var(--black)
 }
 
 
-#award > img {
+.award > img {
     float: left;
     padding-right: 20px;
     padding-bottom: 30px;
 }
 
-#award > p {
+.award > p {
     text-align: left;
+    color: var(--text-color-white);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+    line-height: 1.5em;
 }
 
-#award > h2 {
+.award > h2 {
     padding-top: 10x;
     text-align: left;
     margin-bottom: 5px;
+    color: var(--heading-color);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 }
 
 
 .awardhero {
     margin: auto;
-    max-width: 710px;
+    max-width: 800px;
+    background-color: var(--black);
+    border-bottom: 2px solid #fbee23;
 }
 
-.awardhero > p, h1 {
+.awardhero > p {
     text-align: left;
+    color: var(--text-color-white);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+    line-height: 2em;
 }
+
+.awardhero > h1 {
+    color: var(--heading-color);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
