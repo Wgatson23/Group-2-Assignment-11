@@ -1,0 +1,248 @@
+/* these impact the doc on a root level */
+:root {
+	--black: #232323;
+	--text-color-white: #FFFFFF;
+	--heading-color: #3fb549;
+	--footer-bg-color: #2b7138;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html {
+	background-color: var(--black);
+	color: var(--text-color-white);
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+	line-height: 1.5em;
+	scroll-behavior: smooth;
+}
+
+/* header-nav bar edits flexbox setup */
+header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: auto 0;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: flex-end;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 20px 80px;
+	background-color: white;
+	position: sticky;
+	top: 0;
+}
+
+.logo__img,
+.logo__link {
+	width: 250px;
+	margin-right: auto;
+}
+
+
+/* This is the area for HTML padding width and margin */
+
+
+
+/* This will be the area for nav text styling */
+
+/* nav links font styling */
+.nav__links {
+	font-weight: 300;
+	font-size: 1.3em;
+	text-decoration: 0;
+	color: var(--black);
+	padding-left: -40px;
+	padding-left: 1em;
+}
+
+.nav__links:hover {
+	border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+/* This will be hero image edits */
+
+.hero__img {
+	background-image: url("/assets/photos/hq_photos/parksandrecoffice.jpg");
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-attachment: fixed;
+	background-position: 40%;
+	text-align: center;
+	min-width: 10em;
+	min-height: 600px;
+}
+
+/* html text styling, spacing, height, etc */
+main {
+	margin: 140px;
+	padding-bottom: 500px;
+}
+
+.finest__section,
+.wiki__section {
+	margin-left: 20px;
+	line-height: 2em;
+}
+
+/* adjusts the padding of the two headers on the home page */
+.finest__header,
+.wiki__header {
+	color: var(--heading-color);
+	margin-left: auto;
+	padding-top: 2em;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #fbee23;
+}
+
+
+.finest__section>p {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.wiki-text-containter {
+	max-width: 0 auto;
+	width: 800px;
+	float: right;
+	clear: both;
+}
+
+.wiki-text {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	position: relative;
+
+}
+
+video {
+	/* display: inline; */
+	position: relative;
+	top: 200px;
+	right: -5px;
+}
+
+
+.tflex-container {
+	display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: var(--black)
+}
+
+
+.award > img {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.award > p {
+    text-align: left;
+    color: var(--text-color-white);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+    line-height: 1.5em;
+}
+
+.award > h2 {
+    padding-top: 10x;
+    text-align: left;
+    margin-bottom: 5px;
+    color: var(--heading-color);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+}
+
+
+.awardhero {
+    margin: auto;
+    max-width: 800px;
+    background-color: var(--black);
+    border-bottom: 2px solid #fbee23;
+}
+
+.awardhero > p {
+    text-align: left;
+    color: var(--text-color-white);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+    line-height: 2em;
+}
+
+.awardhero > h1 {
+    color: var(--heading-color);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+}
+
+/* footers edits */
+footer {
+	width: auto;
+	height: 100px;
+	background-color: var(--footer-bg-color);
+	border-top: 4px solid #FFFFFF;
+	position: sticky;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+footer>p {
+	text-align: center;
+	padding-top: 40px;
+}
+
+
+
+
+
+/* media query for mobile responsiveness */
+
+/* Small devices (phones, up to 480px) */
+@media only screen and (max-width: 480px) {
+	.block {
+		/* styles for .block on small devices */
+	}
+
+	.block__element {
+		/* styles for .block__element on small devices */
+	}
+}
+
+/* Medium devices (tablets, 481px and up to 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.block {
+		/* styles for .block on medium devices */
+	}
+
+	.block__element {
+		/* styles for .block__element on medium devices */
+	}
+}
+
+/* Large devices (desktops, 769px and up to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.block {
+		/* styles for .block on large devices */
+	}
+
+	.block__element {
+		/* styles for .block__element on large devices */
+	}
+}
+
+/* Extra large devices (large desktops, 1025px and up) */
+@media only screen and (min-width: 1025px) {
+	.block {
+		/* styles for .block on extra large devices */
+	}
+
+	.block__element {
+		/* styles for .block__element on extra large devices */
+	}
+}
