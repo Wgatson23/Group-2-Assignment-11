@@ -129,6 +129,55 @@ video {
 }
 
 
+.tflex-container {
+	display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: var(--black)
+}
+
+
+.award > img {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.award > p {
+    text-align: left;
+    color: var(--text-color-white);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+    line-height: 1.5em;
+}
+
+.award > h2 {
+    padding-top: 10x;
+    text-align: left;
+    margin-bottom: 5px;
+    color: var(--heading-color);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+}
+
+
+.awardhero {
+    margin: auto;
+    max-width: 800px;
+    background-color: var(--black);
+    border-bottom: 2px solid #fbee23;
+}
+
+.awardhero > p {
+    text-align: left;
+    color: var(--text-color-white);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+    line-height: 2em;
+}
+
+.awardhero > h1 {
+    color: var(--heading-color);
+    font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
+}
 
 /* footers edits */
 footer {
@@ -147,6 +196,7 @@ footer>p {
 	text-align: center;
 	padding-top: 40px;
 }
+
 
 
 
