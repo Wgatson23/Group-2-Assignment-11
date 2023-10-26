@@ -128,11 +128,15 @@ video {
 	right: -5px;
 }
 
+.awards-main {
+	margin: 140;
+	padding: auto;
+}
 
 .tflex-container {
 	display: flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 0 auto;
     margin: 10px auto;
     background-color: var(--black)
 }
@@ -161,8 +165,8 @@ video {
 
 
 .awardhero {
-    margin: auto;
-    max-width: 800px;
+    margin-bottom: auto;
+    max-width: 0 auto;
     background-color: var(--black);
     border-bottom: 2px solid #fbee23;
 }
