@@ -6,7 +6,7 @@
 
 :root {
 	--black: #232323;
-	--text-color-white: #FFFFFF;
+	--text-color-white: #ffffff;
 	--heading-color: #3fb549;
 	--footer-bg-color: #2b7138;
 }
@@ -47,7 +47,6 @@ header {
 	border-bottom: 2px solid rgb(0, 0, 0);
 }
 
-
 nav {
 	margin-right: auto;
 	padding: 0 20px;
@@ -64,10 +63,8 @@ a.link {
 }
 
 .cast_img {
-	
 	padding-top: 10px;
 	width: 180%;
-
 }
 
 h1 {
@@ -115,7 +112,6 @@ h2 {
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 10px;
-
 }
 
 p:nth-child(2):first-letter {
@@ -130,7 +126,6 @@ p:nth-child(2):first-letter {
 }
 
 .cast__row {
-	
 	max-width: 1200px;
 	margin: 0 auto;
 	box-sizing: border-box;
@@ -162,9 +157,6 @@ p:nth-child(2):first-letter {
 	display: inline-block;
 }
 
-
-
-
 .thumbnail_align {
 	text-align: center;
 	max-width: 100%;
@@ -185,7 +177,6 @@ p:nth-child(2):first-letter {
 }
 
 .cast__columns {
-
 	width: 25%;
 	float: left;
 	line-height: 24px;
@@ -222,7 +213,7 @@ footer {
 	width: auto;
 	height: 100px;
 	background-color: var(--footer-bg-color);
-	border-top: 4px solid #FFFFFF;
+	border-top: 4px solid #ffffff;
 	position: sticky;
 	right: 0;
 	bottom: 0;
@@ -230,7 +221,7 @@ footer {
 	z-index: 1;
 }
 
-footer>p {
+footer > p {
 	text-align: center;
 	padding-top: 40px;
 }
@@ -248,8 +239,8 @@ span.tooltip:focus {
 	cursor: grabbing;
 }
 
-span.tooltip:hover>span,
-span.tooltip:focus>span {
+span.tooltip:hover > span,
+span.tooltip:focus > span {
 	display: inline;
 	visibility: visible;
 	color: #fbee23;
@@ -287,12 +278,10 @@ span.tooltip span::after {
 	text-align: center;
 }
 
-
 @media (min-width: 200px) and (max-width: 500px) {
-
 	.cast__columns .cast__hero .cast__p {
 		width: 100%;
-		float:left;
+		float: left;
 		padding-left: 0px;
 		padding-top: 0px;
 		padding-right: 0px;
@@ -316,9 +305,7 @@ span.tooltip span::after {
 	}
 }
 
-
 @media (min-width: 200px) {
-
 	.thumbnail {
 		width: 100px;
 		border-radius: 50%;
@@ -334,7 +321,6 @@ span.tooltip span::after {
 .cast__container:hover {
 	cursor: pointer;
 }
-
 
 @media (min-width: 400px) and (max-width: 1180px) {
 	header {
@@ -378,9 +364,7 @@ span.tooltip span::after {
 	}
 }
 
-
 @media (max-width: 700px) {
-
 	.cast__container .cast__hero {
 		align-content: center;
 		margin-top: 0px;
