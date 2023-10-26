@@ -128,11 +128,6 @@ video {
 	right: -5px;
 }
 
-.awards-main {
-	margin: 140;
-	padding: auto;
-}
-
 .tflex-container {
 	display: flex;
     flex-direction: column;
