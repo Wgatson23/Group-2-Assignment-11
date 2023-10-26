@@ -93,7 +93,7 @@ main {
 
 /* adjusts the padding of the two headers on the home page */
 .finest__header,
-.wiki__header {
+.wiki__header, {
 	color: var(--heading-color);
 	margin-left: auto;
 	padding-top: 2em;
@@ -101,6 +101,13 @@ main {
 	border-bottom: 2px solid #fbee23;
 }
 
+.themes-section > h1, h2 {
+	color: var(--heading-color);
+	padding-top: 2em;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #fbee23;
+	text-align: left;
+}
 
 .finest__section>p {
 	padding-top: 2em;
@@ -178,6 +185,25 @@ video {
     color: var(--heading-color);
     font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 }
+
+
+.themes-section {
+    margin: auto;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 800px;
+}
+
+.themes-section > img {
+    margin: auto;
+    display: block;
+    padding: 30px;
+	height: 300px;
+	width: 90%;
+}
+
+
 
 /* footers edits */
 footer {
