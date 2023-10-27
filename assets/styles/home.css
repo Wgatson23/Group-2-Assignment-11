@@ -331,10 +331,10 @@ video {
 
 .tflex-container {
 	display: flex;
-	flex-direction: column;
-	max-width: 800px;
-	margin: 10px auto;
-	background-color: var(--black);
+    flex-direction: column;
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: var(--black)
 }
 
 .award > img {
@@ -359,10 +359,10 @@ video {
 }
 
 .awardhero {
-	margin: auto;
-	max-width: 800px;
-	background-color: var(--black);
-	border-bottom: 2px solid #fbee23;
+    margin: auto;
+    max-width: 800px;
+    background-color: var(--black);
+    border-bottom: 2px solid #fbee23;
 }
 
 .awardhero > p {
