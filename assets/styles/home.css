@@ -37,6 +37,7 @@ header {
 	background-color: white;
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 
 .logo__img,
@@ -62,6 +63,13 @@ a.link {
 	width: 180%;
 }
 
+.cast__h__one {
+	color: var(--heading-color);
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
 .cast__hero {
 	height: 20vh;
 	width: 95%;
@@ -71,7 +79,8 @@ a.link {
 	font-size: 20px;
 	word-spacing: 8px;
 	word-wrap: break-word;
-	padding: 10px 10px;
+	padding: 10px 100px 15px;
+	padding-bottom: 150px;
 }
 
 .cast__ptwo {
@@ -97,45 +106,22 @@ a.link {
 	padding-bottom: 10px;
 }
 
-p:nth-child(2):first-letter {
-	float: left;
-	color: #3fb549;
-	padding: 0 0.3rem;
-	margin: 0 0.3rem 0 0;
-	border: 2px solid;
-	border-radius: 8px;
-	font-size: 6rem;
-	line-height: 1;
-}
-
 .cast__row {
-	max-width: 1200px;
 	margin: 0 auto;
 	box-sizing: border-box;
-	padding: 48px 96px;
+	padding: 98px 96px;
 	width: 100%;
-	margin-top: 150px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 50px;
-	padding-top: 30px;
-	padding-right: 0px;
+	padding-right: 100px;
 	padding-left: 0px;
 	display: inline-block;
 }
 
 .cast__row_two {
-	display: flex;
-	display: block;
-	max-width: 1200px;
 	margin: 0 auto;
 	box-sizing: border-box;
+	padding: 48px 96px;
 	width: 100%;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 50px;
-	padding-right: 0px;
-	padding-bottom: 20px;
+	padding-right: 100px;
 	padding-left: 0px;
 	display: inline-block;
 }
@@ -154,7 +140,7 @@ p:nth-child(2):first-letter {
 	margin-bottom: 3px;
 	margin-left: 0px;
 	padding-top: 10px;
-	padding-right: 0px;
+	padding-right: 10px;
 	padding-bottom: 0px;
 	padding-left: 0px;
 }
@@ -180,15 +166,15 @@ p:nth-child(2):first-letter {
 }
 
 .cast__columns p {
-	padding-left: 20px;
-	padding-right: 30px;
+	padding-left: 80px;
+	padding-right: 80px;
 	font-size: 20px;
 }
 
 .thumbnail {
-	width: 100px;
-	border-radius: 50%;
-	height: 100px;
+	align-items: center;
+	width: 450px;
+	height: 450px;
 	margin-left: auto;
 }
 
@@ -331,10 +317,10 @@ video {
 
 .tflex-container {
 	display: flex;
-    flex-direction: column;
-    max-width: 800px;
-    margin: 10px auto;
-    background-color: var(--black)
+	flex-direction: column;
+	max-width: 800px;
+	margin: 10px auto;
+	background-color: var(--black);
 }
 
 .award > img {
@@ -359,10 +345,10 @@ video {
 }
 
 .awardhero {
-    margin: auto;
-    max-width: 800px;
-    background-color: var(--black);
-    border-bottom: 2px solid #fbee23;
+	margin: auto;
+	max-width: 800px;
+	background-color: var(--black);
+	border-bottom: 2px solid #fbee23;
 }
 
 .awardhero > p {
