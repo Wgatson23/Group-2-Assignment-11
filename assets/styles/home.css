@@ -1,7 +1,7 @@
 /* these impact the doc on a root level */
 :root {
 	--black: #232323;
-	--text-color-white: #ffffff;
+	--text-color-white: #FFFFFF;
 	--heading-color: #3fb549;
 	--footer-bg-color: #2b7138;
 }
@@ -16,7 +16,7 @@
 html {
 	background-color: var(--black);
 	color: var(--text-color-white);
-	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 	line-height: 1.5em;
 	scroll-behavior: smooth;
 }
@@ -45,204 +45,10 @@ header {
 	margin-right: auto;
 }
 
+
 /* This is the area for HTML padding width and margin */
 
-a.link {
-	float: right;
-	text-decoration: none;
-	color: var(#3fb549);
-	font-size: 1.2rem;
-	margin-left: 74px;
-	font-weight: bold;
-	letter-spacing: 1px;
-}
 
-.cast_img {
-	padding-top: 10px;
-	width: 180%;
-}
-
-.cast__hero {
-	height: 20vh;
-	width: 95%;
-	display: block;
-	justify-content: center;
-	align-items: center;
-	font-size: 20px;
-	word-spacing: 8px;
-	word-wrap: break-word;
-	padding: 10px 10px;
-}
-
-.cast__ptwo {
-	padding-top: 15px;
-}
-
-.cast__container {
-	display: block;
-	flex-direction: column;
-	min-height: 100vh;
-	background-color: black;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-	color: var(--text-color-white);
-	margin-top: 0px;
-	margin-right: auto;
-	margin-bottom: 10px;
-	height: auto;
-	margin-left: auto;
-	border-bottom-width: 0px;
-	padding-left: 0px;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 10px;
-}
-
-p:nth-child(2):first-letter {
-	float: left;
-	color: #3fb549;
-	padding: 0 0.3rem;
-	margin: 0 0.3rem 0 0;
-	border: 2px solid;
-	border-radius: 8px;
-	font-size: 6rem;
-	line-height: 1;
-}
-
-.cast__row {
-	max-width: 1200px;
-	margin: 0 auto;
-	box-sizing: border-box;
-	padding: 48px 96px;
-	width: 100%;
-	margin-top: 150px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 50px;
-	padding-top: 30px;
-	padding-right: 0px;
-	padding-left: 0px;
-	display: inline-block;
-}
-
-.cast__row_two {
-	display: flex;
-	display: block;
-	max-width: 1200px;
-	margin: 0 auto;
-	box-sizing: border-box;
-	width: 100%;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 50px;
-	padding-right: 0px;
-	padding-bottom: 20px;
-	padding-left: 0px;
-	display: inline-block;
-}
-
-.thumbnail_align {
-	text-align: center;
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
-}
-
-.cast__columns {
-	width: 100%;
-	margin-top: 3px;
-	margin-right: 0px;
-	margin-bottom: 3px;
-	margin-left: 0px;
-	padding-top: 10px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-}
-
-.cast__columns {
-	width: 25%;
-	float: left;
-	line-height: 24px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: justify;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-.cast__columns h2 {
-	font-size: 25px;
-	padding-bottom: 20px;
-}
-
-.cast__columns p {
-	padding-left: 20px;
-	padding-right: 30px;
-	font-size: 20px;
-}
-
-.thumbnail {
-	width: 100px;
-	border-radius: 50%;
-	height: 100px;
-	margin-left: auto;
-}
-
-span.tooltip {
-	color: var(--danger-color);
-	position: relative;
-	cursor: pointer;
-	display: inline;
-}
-
-span.tooltip:hover,
-span.tooltip:focus {
-	text-decoration: overline;
-	cursor: grabbing;
-}
-
-span.tooltip:hover > span,
-span.tooltip:focus > span {
-	display: inline;
-	visibility: visible;
-	color: #fbee23;
-}
-
-span.tooltip span {
-	bottom: 150%;
-	left: 50%;
-	margin-left: -60px;
-	position: relative;
-	visibility: hidden;
-	width: 400px;
-	background-color: black;
-	color: #fff;
-	text-align: center;
-	border-radius: 6px;
-	border: 2px solid #3bc4e3;
-	padding: 15px 15px;
-	position: absolute;
-	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-	display: none;
-}
-
-span.tooltip span::after {
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	border-width: 5px;
-	border-style: solid;
-	border-color: #fbee23 transparent transparent transparent;
-}
-
-.cast__container .cast__columns h2 {
-	text-align: center;
-}
 
 /* This will be the area for nav text styling */
 
@@ -274,20 +80,22 @@ span.tooltip span::after {
 }
 
 /* html text styling, spacing, height, etc */
-main {
+.block__element {
 	margin: 140px;
 	padding-bottom: 500px;
 }
 
 .finest__section,
-.wiki__section {
+.wiki__section,
+.themes-section {
 	margin-left: 20px;
 	line-height: 2em;
 }
 
 /* adjusts the padding of the two headers on the home page */
 .finest__header,
-.wiki__header {
+.wiki__header,
+.themes__header {
 	color: var(--heading-color);
 	margin-left: auto;
 	padding-top: 2em;
@@ -295,8 +103,14 @@ main {
 	border-bottom: 2px solid #fbee23;
 }
 
-.themes-section > h1,
-h2 {
+.themes-container {
+	display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.themes-section {
 	color: var(--heading-color);
 	padding-top: 2em;
 	padding-bottom: 20px;
@@ -304,11 +118,13 @@ h2 {
 	text-align: left;
 }
 
-<<<<<<< HEAD
-.finest__section> p {
-=======
-.finest__section > p {
->>>>>>> 6d4c335169963132a7252a046f4dd34757697bfd
+.themes-section>h1,
+h2 {
+	margin-left: 20px;
+	line-height: 2em;
+}
+
+.finest__section>p {
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
@@ -324,6 +140,7 @@ h2 {
 	padding-top: 2em;
 	padding-bottom: 2em;
 	position: relative;
+	z-index: -1;
 }
 
 video {
@@ -331,65 +148,79 @@ video {
 	position: relative;
 	top: 200px;
 	right: -5px;
+	z-index: -1;
 }
+
 
 .tflex-container {
 	display: flex;
-    flex-direction: column;
-    max-width: 800px;
-    margin: 10px auto;
-    background-color: var(--black)
+	flex-direction: column;
+	max-width: 800px;
+	margin: 10px auto;
+	background-color: var(--black)
 }
 
-.award > img {
+
+.award>img {
 	float: left;
 	padding-right: 20px;
 	padding-bottom: 30px;
 }
 
-.award > p {
+.award>p {
 	text-align: left;
 	color: var(--text-color-white);
-	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 	line-height: 1.5em;
 }
 
-.award > h2 {
+.award>h2 {
 	padding-top: 10x;
 	text-align: left;
 	margin-bottom: 5px;
 	color: var(--heading-color);
-	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 }
 
+
 .awardhero {
-    margin: auto;
+	/* margin: auto;
     max-width: 800px;
     background-color: var(--black);
     border-bottom: 2px solid #fbee23;
+	padding-top: 100px; */
+	color: var(--heading-color);
+	margin-left: auto;
+	padding-top: 2em;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #fbee23;
 }
 
-.awardhero > p {
+.awardhero>p {
 	text-align: left;
 	color: var(--text-color-white);
-	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 	line-height: 2em;
 }
 
-.awardhero > h1 {
+.awardhero>h1 {
 	color: var(--heading-color);
-	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 }
 
+
 .themes-section {
-	margin: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 800px;
+	max-width: auto 0;
 }
 
-.themes-section > img {
+.themes-section>p {
+	color: var(--text-color-white);
+}
+
+.themes-section>img {
 	margin: auto;
 	display: block;
 	padding: 30px;
@@ -397,12 +228,14 @@ video {
 	width: 90%;
 }
 
+
+
 /* footers edits */
 footer {
 	width: auto;
 	height: 100px;
 	background-color: var(--footer-bg-color);
-	border-top: 4px solid #ffffff;
+	border-top: 4px solid #FFFFFF;
 	position: sticky;
 	right: 0;
 	bottom: 0;
@@ -410,10 +243,14 @@ footer {
 	z-index: 1;
 }
 
-footer > p {
+footer>p {
 	text-align: center;
 	padding-top: 40px;
 }
+
+
+
+
 
 /* media query for mobile responsiveness */
 
