@@ -34,7 +34,7 @@ header {
 	margin-right: auto;
 }
 
-.nav__links_cast {
+.nav__links {
 	font-weight: 300;
 	font-size: 1.3em;
 	text-decoration: 0;
@@ -63,8 +63,9 @@ a.link {
 }
 
 .cast_img {
+	align-items: center;
 	padding-top: 10px;
-	width: 180%;
+	max-width: 100%;
 }
 
 h1 {
@@ -105,7 +106,6 @@ h2 {
 	margin-right: auto;
 	margin-bottom: 10px;
 	height: auto;
-	max-width: 1240px;
 	margin-left: auto;
 	border-bottom-width: 0px;
 	padding-left: 0px;
