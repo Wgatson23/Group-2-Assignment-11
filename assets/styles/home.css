@@ -1,7 +1,7 @@
 /* these impact the doc on a root level */
 :root {
 	--black: #232323;
-	--text-color-white: #ffffff;
+	--text-color-white: #FFFFFF;
 	--heading-color: #3fb549;
 	--footer-bg-color: #2b7138;
 }
@@ -16,7 +16,7 @@
 html {
 	background-color: var(--black);
 	color: var(--text-color-white);
-	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 	line-height: 1.5em;
 	scroll-behavior: smooth;
 }
@@ -45,6 +45,7 @@ header {
 	width: 250px;
 	margin-right: auto;
 }
+
 
 /* This is the area for HTML padding width and margin */
 
@@ -226,9 +227,6 @@ span.tooltip span::after {
 	border-color: #fbee23 transparent transparent transparent;
 }
 
-.cast__container .cast__columns h2 {
-	text-align: center;
-}
 
 /* This will be the area for nav text styling */
 
@@ -260,20 +258,22 @@ span.tooltip span::after {
 }
 
 /* html text styling, spacing, height, etc */
-main {
+.block__element {
 	margin: 140px;
 	padding-bottom: 500px;
 }
 
 .finest__section,
-.wiki__section {
+.wiki__section,
+.themes-section {
 	margin-left: 20px;
 	line-height: 2em;
 }
 
 /* adjusts the padding of the two headers on the home page */
 .finest__header,
-.wiki__header {
+.wiki__header,
+.themes__header {
 	color: var(--heading-color);
 	margin-left: auto;
 	padding-top: 2em;
@@ -281,8 +281,14 @@ main {
 	border-bottom: 2px solid #fbee23;
 }
 
-.themes-section > h1,
-h2 {
+.themes-container {
+	display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.themes-section {
 	color: var(--heading-color);
 	padding-top: 2em;
 	padding-bottom: 20px;
@@ -290,7 +296,13 @@ h2 {
 	text-align: left;
 }
 
-.finest__section > p {
+.themes-section>h1,
+h2 {
+	margin-left: 20px;
+	line-height: 2em;
+}
+
+.finest__section>p {
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
@@ -306,6 +318,7 @@ h2 {
 	padding-top: 2em;
 	padding-bottom: 2em;
 	position: relative;
+	z-index: -1;
 }
 
 video {
@@ -313,65 +326,73 @@ video {
 	position: relative;
 	top: 200px;
 	right: -5px;
+	z-index: -1;
 }
+
 
 .tflex-container {
 	display: flex;
-	flex-direction: column;
-	max-width: 800px;
-	margin: 10px auto;
-	background-color: var(--black);
+    flex-direction: column;
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: var(--black)
 }
 
-.award > img {
+
+.award>img {
 	float: left;
 	padding-right: 20px;
 	padding-bottom: 30px;
 }
 
-.award > p {
+.award>p {
 	text-align: left;
 	color: var(--text-color-white);
-	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 	line-height: 1.5em;
 }
 
-.award > h2 {
+.award>h2 {
 	padding-top: 10x;
 	text-align: left;
 	margin-bottom: 5px;
 	color: var(--heading-color);
-	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 }
+
 
 .awardhero {
-	margin: auto;
-	max-width: 800px;
-	background-color: var(--black);
-	border-bottom: 2px solid #fbee23;
+    margin: auto;
+    max-width: 800px;
+    background-color: var(--black);
+    border-bottom: 2px solid #fbee23;
 }
 
-.awardhero > p {
+.awardhero>p {
 	text-align: left;
 	color: var(--text-color-white);
-	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 	line-height: 2em;
 }
 
-.awardhero > h1 {
+.awardhero>h1 {
 	color: var(--heading-color);
-	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
+	font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 }
 
+
 .themes-section {
-	margin: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 800px;
+	max-width: auto 0;
 }
 
-.themes-section > img {
+.themes-section>p {
+	color: var(--text-color-white);
+}
+
+.themes-section>img {
 	margin: auto;
 	display: block;
 	padding: 30px;
@@ -379,12 +400,14 @@ video {
 	width: 90%;
 }
 
+
+
 /* footers edits */
 footer {
 	width: auto;
 	height: 100px;
 	background-color: var(--footer-bg-color);
-	border-top: 4px solid #ffffff;
+	border-top: 4px solid #FFFFFF;
 	position: sticky;
 	right: 0;
 	bottom: 0;
@@ -392,10 +415,14 @@ footer {
 	z-index: 1;
 }
 
-footer > p {
+footer>p {
 	text-align: center;
 	padding-top: 40px;
 }
+
+
+
+
 
 /* media query for mobile responsiveness */
 
