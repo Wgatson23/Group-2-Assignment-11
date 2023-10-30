@@ -197,6 +197,19 @@ span.tooltip span::after {
 	border-bottom: 2px solid rgb(0, 0, 0);
 }
 
+.logo__link {
+	animation: slide-in 1000ms;
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translatex(0%)
+	}
+}
+
 /* This will be hero image edits */
 
 .hero__img {
@@ -296,17 +309,18 @@ video {
 	padding-bottom: 30px;
 }
 
-.award > p {
+.award_description {
 	text-align: left;
 	color: var(--text-color-white);
 	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
 	line-height: 1.5em;
 }
 
-.award > h2 {
+.awardname {
 	padding-top: 10x;
 	text-align: left;
 	margin-bottom: 5px;
+	margin-left: auto;
 	color: var(--heading-color);
 	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
 }
@@ -316,13 +330,8 @@ video {
 	max-width: 800px;
 	background-color: var(--black);
 	border-bottom: 2px solid #fbee23;
-}
-
-.awardhero > p {
-	text-align: left;
-	color: var(--text-color-white);
-	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
-	line-height: 2em;
+	padding: 20px 0px;
+	margin-bottom: 20px;
 }
 
 .awardhero > h1 {
@@ -446,6 +455,7 @@ footer > p {
 }
 
 @media only screen and (min-width: 401px) (max-width: 768px) {
+	
 	.cast__row {
 		word-wrap: break-word;
 		max-width: 100%;
@@ -485,6 +495,8 @@ footer > p {
 		max-width: 200px;
 		display: block;
 	}
+
+
 }
 
 /* End cast page media query - William */

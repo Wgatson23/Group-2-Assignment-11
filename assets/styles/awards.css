@@ -51,7 +51,7 @@ html {
     border-bottom: 2px solid #fbee23;
 }
 
-.awardhero > p {
+.award__description {
     text-align: left;
     color: var(--text-color-white);
     font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
