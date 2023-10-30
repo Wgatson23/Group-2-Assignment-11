@@ -28,14 +28,14 @@ html {
     padding-bottom: 30px;
 }
 
-.award > p {
+.award__description {
     text-align: left;
     color: var(--text-color-white);
     font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
     line-height: 1.5em;
 }
 
-.award > h2 {
+.awardname {
     padding-top: 10x;
     text-align: left;
     margin-bottom: 5px;
@@ -58,7 +58,7 @@ html {
     line-height: 2em;
 }
 
-.awardhero > h1 {
+.heroname {
     color: var(--heading-color);
     font-family: 'Franklin Gothic Medium', sans-serif, system-ui;
 }
