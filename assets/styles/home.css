@@ -238,8 +238,7 @@ span.tooltip span::after {
 
 /* adjusts the padding of the two headers on the home page */
 .finest__header,
-.wiki__header,
-.themes__header {
+.wiki__header {
 	color: var(--heading-color);
 	margin-left: auto;
 	padding-top: 2em;
@@ -255,18 +254,16 @@ span.tooltip span::after {
 	background-color: var(--black);
 }
 
+.themes__heading, .themes__heading__2 {
+	margin: 0;
+}
+
 .themes-section {
 	color: var(--heading-color);
 	padding-top: 2em;
 	padding-bottom: 20px;
 	border-bottom: 2px solid #fbee23;
 	text-align: left;
-}
-
-.themes-section > h1,
-h2 {
-	margin-left: 20px;
-	line-height: 2em;
 }
 
 .finest__section > p {
@@ -352,11 +349,12 @@ video {
 }
 
 .themes-section > img {
-	margin: auto;
+	margin: 0;
 	display: block;
+	justify-content: center;
 	padding: 30px;
 	height: 300px;
-	width: 90%;
+	object-fit: contain;
 }
 
 /* footers edits */
