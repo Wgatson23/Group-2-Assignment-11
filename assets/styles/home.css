@@ -390,6 +390,19 @@ footer > p {
 	.block__element {
 		/* styles for .block__element on small devices */
 	}
+
+	.footer {
+		min-width: 480px;
+	  }
+
+	.header {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}  
 }
 
 /* Medium devices (tablets, 481px and up to 768px) */
@@ -401,6 +414,10 @@ footer > p {
 	.block__element {
 		/* styles for .block__element on medium devices */
 	}
+
+	.footer {
+		min-width: 481px;
+	  }
 }
 
 /* Large devices (desktops, 769px and up to 1024px) */
@@ -412,6 +429,10 @@ footer > p {
 	.block__element {
 		/* styles for .block__element on large devices */
 	}
+
+	.footer {
+		min-width: 769px;
+	  }
 }
 
 /* Extra large devices (large desktops, 1025px and up) */
@@ -423,7 +444,21 @@ footer > p {
 	.block__element {
 		/* styles for .block__element on extra large devices */
 	}
+
+	.footer {
+		min-width: 1025px;
+	  }
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Start cast page media query - William */
 @media only screen and (max-width: 500px) {
