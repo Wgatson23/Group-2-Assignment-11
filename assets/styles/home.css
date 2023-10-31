@@ -215,27 +215,59 @@ span.tooltip span::after {
 }
 
 /* html text styling, spacing, height, etc */
-.block__element {
-	margin: 140px;
-	padding-bottom: 500px;
+.article__header {
+color: var(--heading-color);
+margin-left: auto;
+padding-top: 2em;
+padding-bottom: 20px;
+border-bottom: 2px solid #fbee23;
 }
 
-.finest__section,
-.wiki__section,
-.themes-section {
-	margin-left: 20px;
-	line-height: 2em;
-}
 
 /* adjusts the padding of the two headers on the home page */
-.finest__header,
-.wiki__header {
-	color: var(--heading-color);
-	margin-left: auto;
-	padding-top: 2em;
-	padding-bottom: 20px;
-	border-bottom: 2px solid #fbee23;
+
+.homemain {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	margin: 10px auto;
+	background-color: var(--black);
 }
+
+.article__section--wiki, .article__section--finest, .article__wiki-text > p {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	}
+	
+	.article__wiki-text-container {
+	max-width: 0 auto;
+	width: 800px;
+	float: right;
+	clear: both;
+	}
+	
+	.article__video {
+		float: left;
+	}
+
+	.article__wiki-text {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	position: relative;
+	z-index: -1;
+	}
+	
+	.article__video {
+	/* display: inline; */
+	right: -5px;
+	padding: 0px 10px 0px 0px;
+	z-index: -1;
+	}
+
+	.article__header {
+	padding-bottom: 10px;
+	}
+	
 
 .themes-flex-container {
 	display: flex;
@@ -264,28 +296,6 @@ span.tooltip span::after {
 .finest__section > p {
 	padding-top: 2em;
 	padding-bottom: 2em;
-}
-
-.wiki-text-containter {
-	max-width: 0 auto;
-	width: 800px;
-	float: right;
-	clear: both;
-}
-
-.wiki-text {
-	padding-top: 2em;
-	padding-bottom: 2em;
-	position: relative;
-	z-index: -1;
-}
-
-video {
-	/* display: inline; */
-	position: relative;
-	top: 200px;
-	right: -5px;
-	z-index: -1;
 }
 
 .tflex-container {
@@ -353,7 +363,7 @@ video {
 }
 
 /* footers edits */
-footer {
+.footer {
 	width: auto;
 	height: 100px;
 	background-color: var(--footer-bg-color);
