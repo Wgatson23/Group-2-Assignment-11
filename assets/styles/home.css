@@ -334,7 +334,7 @@ video {
 	margin-bottom: 20px;
 }
 
-.awardhero > h1 {
+.hero__name {
 	color: var(--heading-color);
 	font-family: "Franklin Gothic Medium", sans-serif, system-ui;
 }
@@ -346,7 +346,7 @@ video {
 	max-width: auto 0;
 }
 
-.themes-section > p {
+.award_description{
 	color: var(--text-color-white);
 }
 
