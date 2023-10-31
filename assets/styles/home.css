@@ -258,6 +258,10 @@ span.tooltip span::after {
 	margin: 0;
 }
 
+.themes__p {
+	color: #ffffff;
+}
+
 .themes-section {
 	color: var(--heading-color);
 	padding-top: 2em;
