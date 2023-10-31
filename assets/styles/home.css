@@ -48,15 +48,6 @@ header {
 
 /* This is the area for HTML padding width and margin */
 
-a.link {
-	float: right;
-	text-decoration: none;
-	color: var(#3fb549);
-	font-size: 1.2rem;
-	margin-left: 74px;
-	font-weight: bold;
-	letter-spacing: 1px;
-}
 
 /* Start cast page-William */
 .cast_img {
@@ -374,7 +365,7 @@ footer {
 	z-index: 1;
 }
 
-footer > p {
+.footer > p {
 	text-align: center;
 	padding-top: 40px;
 }
