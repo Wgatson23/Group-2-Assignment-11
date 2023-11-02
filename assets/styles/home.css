@@ -397,12 +397,12 @@ border-bottom: 2px solid #fbee23;
 	  }
 
 	.header {
-		display: flex;
+		display: block;
 		flex-direction: column;
 		margin: auto;
 		align-items: center;
 		justify-content: space-between;
-		width: 100%;
+		min-width: 480px;
 	}  
 }
 
@@ -419,6 +419,26 @@ border-bottom: 2px solid #fbee23;
 	.footer {
 		min-width: 481px;
 	  }
+
+	.tflex-container {
+		min-width: 481px;
+		background-size: cover;
+    text-align: center;
+    min-width: 10em;
+    min-height: 500px;
+		
+	}  
+
+	.img__container {
+		min-width: 481px;
+		background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    background-position: 40%;
+    text-align: center;
+    min-width: 10em;
+    min-height: 500px;
+	}
 }
 
 /* Large devices (desktops, 769px and up to 1024px) */
@@ -450,7 +470,6 @@ border-bottom: 2px solid #fbee23;
 		min-width: 1025px;
 	  }
 }
-
 
 
 
