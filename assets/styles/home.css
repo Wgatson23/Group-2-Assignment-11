@@ -489,7 +489,7 @@ span.tooltip span::after {
 		min-height: 100px; */
 		width: 100%;
 		height: auto;
-		background-image: url('/assets/photos/hq_photos/prresize.png');
+		background-image: url('/assets/photos/prresize.png');
 		/* content: url('/assets/photos/hq_photos/parksandrecoffice.jpg'); */
 		background-size: cover;
 		background-position: 40% 20%;
