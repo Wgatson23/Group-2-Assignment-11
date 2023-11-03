@@ -384,39 +384,68 @@ border-bottom: 2px solid #fbee23;
 
 /* Small devices (phones, up to 480px) */
 @media only screen and (max-width: 480px) {
-	.block {
-		/* styles for .block on small devices */
-	}
-
-	.block__element {
-		/* styles for .block__element on small devices */
-	}
-
 	.footer {
 		min-width: 480px;
 	  }
 
-	.header {
+	  html {
+		min-width: fit-content;
+	  }
+
+
+	  .header  {
 		display: block;
-		flex-direction: column;
+		flex-wrap: wrap;
 		margin: auto;
 		align-items: center;
 		justify-content: space-between;
 		min-width: 480px;
+	} 
+
+	.nav__links,.logo__img {
+		display: block;
+		flex-wrap: wrap;
+		margin: auto;
+		align-items: center;
+		justify-content: space-between;
+		min-width: 480px;
+		text-align: center;
+		padding-bottom: 20px;
 	}  
+
+	.article__header, .tflex-container, .themes-flex-container, .cast__h__one. ,.cast__hero {
+		/* text-align:center; */
+		border-width: 100%;
+		line-height: 2.2em;
+		padding-top: 2em;
+	}
+
+	.themes-flex-container, .tflex-container {
+		width: 90%;
+	}
+.article__content, .article__section--wiki {
+		line-height: 2em;
+		padding: 20px;
+		
+		/* margin: 0px 0 0px 3em ; */
+
+	}
+
+
+
+	.img__container, .hero__img {
+		/* min-width: 480px;
+		min-height: 100px; */
+		width: 100%;
+		height: auto;
+		background-image: url('/assets/photos/parksresize.png');
+		background-size: cover;
+		background-position: center;
 }
 
 /* Medium devices (tablets, 481px and up to 768px) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-	.block {
-		/* styles for .block on medium devices */
-	}
-
-	.block__element {
-		/* styles for .block__element on medium devices */
-	}
-
-	.footer {
+.footer {
 		min-width: 481px;
 	  }
 
@@ -443,13 +472,6 @@ border-bottom: 2px solid #fbee23;
 
 /* Large devices (desktops, 769px and up to 1024px) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-	.block {
-		/* styles for .block on large devices */
-	}
-
-	.block__element {
-		/* styles for .block__element on large devices */
-	}
 
 	.footer {
 		min-width: 769px;
@@ -458,13 +480,6 @@ border-bottom: 2px solid #fbee23;
 
 /* Extra large devices (large desktops, 1025px and up) */
 @media only screen and (min-width: 1025px) {
-	.block {
-		/* styles for .block on extra large devices */
-	}
-
-	.block__element {
-		/* styles for .block__element on extra large devices */
-	}
 
 	.footer {
 		min-width: 1025px;
@@ -489,7 +504,7 @@ border-bottom: 2px solid #fbee23;
 	}
 
 	.cast__hero {
-		max-width: 300px;
+		/* max-width: 300px; */
 	}
 
 	.cast__columns p {
