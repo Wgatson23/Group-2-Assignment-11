@@ -189,7 +189,7 @@ span.tooltip span::after {
 	font-weight: 300;
 	font-size: 1.3em;
 	-webkit-text-decoration: 0;
-	text-decoration: 0;
+	text-decoration: none;
 	color: var(--black);
 	padding-left: -40px;
 	padding-left: 1em;
@@ -489,7 +489,7 @@ span.tooltip span::after {
 		min-height: 100px; */
 		width: 100%;
 		height: auto;
-		background-image: url('./assets/photos/parksresize.png');
+		background-image: url('/assets/photos/hq_photos/parksandrecoffice.jpg');
 		content: url('/assets/photos/hq_photos/parksandrecoffice.jpg');
 		background-size: cover;
 		background-position: center;
