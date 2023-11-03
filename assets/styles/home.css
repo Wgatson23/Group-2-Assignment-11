@@ -231,7 +231,7 @@ span.tooltip span::after {
 /* This will be hero image edits */
 
 .hero__img {
-	background-image: url("/assets/photos/hq_photos/parksandrecoffice.jpg");
+	background-image: url("/assets/photos/parksandrecoffice.jpg");
 	background-size: cover;
 	-webkit-background-size: cover;
 	background-attachment: fixed;
