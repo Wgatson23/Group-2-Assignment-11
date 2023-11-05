@@ -130,55 +130,6 @@ header {
 	object-fit: cover;
 }
 
-span.tooltip {
-	color: var(--danger-color);
-	position: relative;
-	cursor: pointer;
-	display: inline;
-}
-
-span.tooltip:hover,
-span.tooltip:focus {
-	text-decoration: overline;
-	cursor: -webkit-grabbing;
-	cursor: grabbing;
-}
-
-span.tooltip:hover>span,
-span.tooltip:focus>span {
-	display: inline;
-	visibility: visible;
-	color: #fbee23;
-}
-
-span.tooltip span {
-	bottom: 150%;
-	left: 50%;
-	margin-left: -60px;
-	position: relative;
-	visibility: hidden;
-	width: 400px;
-	background-color: black;
-	color: #fff;
-	text-align: center;
-	border-radius: 6px;
-	border: 2px solid #3bc4e3;
-	padding: 15px 15px;
-	position: absolute;
-	-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-	display: none;
-}
-
-span.tooltip span::after {
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	border-width: 5px;
-	border-style: solid;
-	border-color: #fbee23 transparent transparent transparent;
-}
 
 /* End cast page - William */
 
@@ -230,16 +181,32 @@ span.tooltip span::after {
 
 /* This will be hero image edits */
 
-.hero__img {
-	background-image: url("./assets/parksandrecoffice.jpg");
-	background-size: cover;
-	-webkit-background-size: cover;
-	background-attachment: fixed;
-	background-position: 40%;
-	text-align: center;
-	min-width: 10em;
-	min-height: 600px;
+.img__container {
+	width: 100%;
+	overflow: hidden;
+
 }
+
+.hero__img {
+	display: flex;
+	/* This will allow you to center the image if needed */
+	justify-content: center;
+	/* This centers the image horizontally */
+	align-items: center;
+	/* This centers the image vertically */
+
+}
+
+.hero__img img {
+	width: 100%;
+	/* This makes the image responsive and scales according to the container's width */
+	height: auto;
+	/* This maintains the aspect ratio of the image */
+	max-width: 1990px;
+	/* This ensures that the image does not scale beyond its original width */
+
+}
+
 
 /* html text styling, spacing, height, etc */
 .article__header {
@@ -484,12 +451,12 @@ span.tooltip span::after {
 
 
 	.img__container,
-	.hero__img {
+	.hero__img>img {
 		/* min-width: 480px;
 		min-height: 100px; */
 		width: 100%;
 		height: auto;
-		background-image: url('https://github.com/Wgatson23/Group-2-Assignment-11/blob/main/assets/photos/prresize.png?raw=true');
+		/* background-image: url('/assets/parksandrecoffice.jpg') */
 		/* content: url('/assets/photos/hq_photos/parksandrecoffice.jpg'); */
 		background-size: cover;
 		background-position: 40% 20%;
@@ -498,29 +465,96 @@ span.tooltip span::after {
 
 /* Medium devices (tablets, 481px and up to 768px) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-	.footer {
-		min-width: 481px;
+	header {
+		display: block;
+		padding: 20px;
+		background-color: white;
+		position: sticky;
+		top: 0;
+		z-index: 1;
 	}
 
-	.tflex-container {
-		min-width: 481px;
-		background-size: cover;
+	.logo__img,
+	.logo__link {
+		width: 70%;
+		/* Adjusted to take full width */
+		margin: 0 0px 20px 0;
+		/* Adjusted to add space below the logo */
+		display: block;
+		/* Makes the logo take the full line */
+
+	}
+
+	.logo__img {
+		margin-left: 150px;
+	}
+
+	.nav__links {
+		display: block;
+		/* Makes each link take the full line */
 		text-align: center;
-		min-width: 10em;
-		min-height: 500px;
-
+		/* Centers the text */
+		padding: 10px 0;
+		/* Adds padding above and below each link */
+		color: var(--black);
+		/* Text color for the links */
+		text-decoration: none;
+		/* Removes underline from links */
+		border-bottom: 2px solid transparent;
+		/* Adds a transparent border for a hover effect */
 	}
 
-	.img__container {
-		min-width: 481px;
-		background-size: cover;
-		-webkit-background-size: cover;
-		background-attachment: fixed;
-		background-position: 40%;
+	.nav__links:hover {
+		border-bottom: 2px solid rgb(0, 0, 0);
+		/* Border color on hover */
+	}
+
+	.cast__row {
+		word-wrap: break-word;
+		max-width: 100%;
+		display: contents;
+	}
+
+	.cast__hero {
+		/* max-width: 300px; */
+	}
+
+	.cast__columns p {
 		text-align: center;
-		min-width: 10em;
-		min-height: 500px;
+		padding: 1px;
 	}
+
+	.cast__columns {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		width: 60%;
+	}
+
+	.thumbnail {
+		float: none;
+		width: 90%;
+		height: 100%;
+		display: block;
+		margin: auto;
+	}
+
+	.main-content, .tflex-container, .cast__row, .themes-flex-container{
+		margin: auto;
+		padding: 20px 30px 40px 40px;
+		list-style: 2em;
+	}
+
+	
+
+
+
+
+
 }
 
 /* Large devices (desktops, 769px and up to 1024px) */
@@ -634,5 +668,3 @@ span.tooltip span::after {
 
 
 }
-
-/* End cast page media query - William */
